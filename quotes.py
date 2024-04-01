@@ -101,3 +101,5 @@ Wishes = ["Wishing you a day as special as you are. Happy birthday!",
 "On your birthday, may you be surrounded by the people who love and appreciate you. Happy birthday!",
 "Wishing you a day filled with love, laughter, and all the things that make life beautiful. Happy birthday!"
 ]
+
+print(len(Wishes))
