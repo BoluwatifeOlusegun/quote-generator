@@ -1,4 +1,7 @@
-# quote-generator
-## On-going
-This project needs more adjustment in the quotes module
-There are over 100 quotes in the module that needs separation with comma "," in the list.
+# Quote && Bithday Generator
+## Progress
+The code has been completed and all bugs has been fixed
+
+## View
+![Demo Video](./demo.mp4)
+
