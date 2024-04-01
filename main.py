@@ -1,6 +1,7 @@
 # Importing necessary Modules
 from logo import art
-from quotes_module import birthday_quotes, famous_quotes
+from famous import notables
+from birthday import Wishes
 import random  # Import the random module
 
 # Logo display
@@ -10,7 +11,7 @@ print(art)
 print("HELLO WELCOME TO TIFE QUOTES")
 
 # Setting a bridge
-print('+-+-+-+-+-++-+-+-+-+-++-+-+-+-+-++-+-+-+-+-++-+-+-+-+-++-+-+-+-+-++-+-+-+-+-++-+-+-+-+-++-+-+-+-+-++-+-+-+-+-++-+-+-+-+-+')
+print('+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-')
 
 # Title
 print("Select your 'quote choice below: ")
@@ -29,22 +30,21 @@ user_choice = input("Enter the number corresponding to your choice: ")
 # Function to display a random quote
 def display_random_quote(quote_list):
     if quote_list:
-        print("Here is a random quote:")
-        random_quote = random.choice(quote_list)
-        print(random_quote)
+        print(">>>: " + random.choice(quote_list))
     else:
         print("No quotes available.")
 
 # Function to display the selected quote
-def display_quote(quote_type):
-    if quote_type == "1":
+def display_quote(choice):
+    if choice == "1":
         # Birthday quote logic
-        display_random_quote(birthday_quotes)
-    elif quote_type == "2":
+        display_random_quote(Wishes)
+    elif choice == "2":
         # Famous quote logic
-        display_random_quote(famous_quotes)
+        display_random_quote(notables)
     else:
         print("Invalid choice. Please enter a valid number.")
 
 # Call the function to display the selected quote
 display_quote(user_choice)
+
